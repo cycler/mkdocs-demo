@@ -1,5 +1,6 @@
 # mkdocs-demo
 
+很好用的文档项目管理工具，文件编辑用markdown语法， 支持多语言，支持版本管理，类似Wordpress、gitbook，但更好用。
 
 > pip3 install mkdocs
 
