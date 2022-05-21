@@ -1,0 +1,94 @@
+site_name:  My Mkdocs Demo 
+copyright: CopyRight © 2022, Wonder Tech.
+site_author: Sean Sheng
+repo_url: https://github.com/cycler/mkdocs-demo
+repo_name: cycler/mkdocs-demo
+
+
+extra:
+    version: 1.0
+    generator: false
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/cycler
+          name: Safeheron Github
+        - icon: fontawesome/brands/twitter
+          link: https://twitter.com/cycler_
+          name: Safeheron Twitter
+    homepage: https://www.xxxxxxxx.com
+#    alternate:
+#       - name: English
+#         lang: en
+#       - name: 中文
+##         link: cn
+#         lang: zh
+
+
+#
+#nav:
+#    - About Itself: "index.md"
+#    - API: 
+#        - API Introduction: "api/introduction.md"
+#        - API Reference: "api/reference.md"
+#        - API Cosigner: 
+#            - About API Cosigner: "api/cosigner.md"
+#            - Depolyment Guide: "api/deployment.md"
+#
+# 
+theme: 
+    name: material
+    language: en
+#    locale: en
+ #   custom_dir: my_theme_customizations/
+#    static_templates:
+#        - sitemap.html
+    logo: mylogo.png
+    favicon: mylogo.png
+    icon:
+        repo: fontawesome/brands/git
+    include_sidebar: true
+    features:
+        - header.autohide
+        - announce.dismiss
+#        - navigation.tabs
+        - navigation.top
+#        - navigation.instant
+    palette:
+        - scheme: default
+#          primary: cyan
+#          accent: cyan
+          toggle:
+            icon: material/toggle-switch-off-outline
+            name: Switch to dark mode
+        - scheme: slate
+#          primary: deep orange
+#          accent: deep orange
+          toggle:
+            icon: material/toggle-switch
+            name: Switch to light mode
+
+plugins:
+    - search:
+        separator: '[\s\u200b\-]'
+        lang:
+            - en
+            - zh
+    - i18n:
+        default_language: en
+        languages:
+            en: 
+                name: English
+                site_name: English Documents 
+            zh: 
+                name: 中文（简体）
+                site_name: 中文文档
+        nav_translations:
+            zh:
+              First folder: 第一个归档
+        material_alternate: true
+#    - material-relative-language-selector:
+#        root_domain: true
+    #- mdpo:
+#       languages:
+#           - en     # first language is the original
+#           - zh
